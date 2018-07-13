@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.sai.newsapp.AddNewsActivity">
+
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add News"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:textColor="#A9CCE3"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Image :"
+        android:textColor="#A9CCE3"
+        android:layout_below="@+id/title"
+        android:textSize="17dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="18dp"/>
+
+    <Button
+        android:id="@+id/gallery"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="Gallery"
+        android:layout_toRightOf="@+id/select"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#000"
+        android:background="@drawable/shape"
+        />
+
+    <Button
+        android:id="@+id/camera"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="Camera"
+        android:layout_toRightOf="@+id/gallery"
+        android:layout_below="@+id/title"
+        android:layout_margin="10dp"
+        android:padding="7dp"
+        android:textColor="#000"
+        android:background="@drawable/shape"
+        />
+
+    <Spinner
+        android:id="@+id/category"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gallery"
+        android:background="@android:drawable/btn_dropdown"
+        android:scrollbars="horizontal"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textColor="#fff"
+        />
+    <EditText
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/category"
+        android:hint="Description (0 - 50 characters)"
+        android:textColorHint="#A9CCE3"
+        android:textColor="#fff"
+        android:padding="20dp"
+        />
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/desc"/>
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:text="Upload News"
+        android:textColor="#000"
+        android:layout_below="@+id/image"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+
+</RelativeLayout>
+</ScrollView>

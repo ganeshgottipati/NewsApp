@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@android:color/transparent"
+    tools:context="com.example.sai.newsapp.LaunchActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/launch"
+        android:layout_marginBottom="80dp"
+        android:id="@+id/logo"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:layout_below="@+id/logo"
+        android:text="Welcome\nto\n News 24x7"
+        android:layout_centerHorizontal="true"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowColor="#2980B9"
+        android:shadowRadius="2"
+        android:textAlignment="center"
+        android:fontFamily="cursive"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="#000"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/start"
+        android:padding="12dp"
+        android:layout_below="@+id/text"
+        android:text="Let's Get Started"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:background="@drawable/shape"
+        android:drawableRight="@android:drawable/ic_media_next"
+        android:textColor="#000"
+        android:layout_marginTop="130dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
